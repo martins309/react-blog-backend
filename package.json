@@ -1,0 +1,22 @@
+{
+  "name": "backend-react-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:create": "createdb reacto_blog",
+    "db:destroy": "dropdb reacto_blog",
+    "db:init": "psql -f schema.sql reacto_blog",
+    "db:seed": "psql -f seed.sql reacto_blog",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
