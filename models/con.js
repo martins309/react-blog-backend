@@ -1,5 +1,5 @@
 const host = 'localhost',
-database = 'favorties',
+database = 'favorites',
 user = 'postgres';
 
 const pgp = require('pg-promise') ({

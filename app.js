@@ -18,3 +18,8 @@ server.listen(port, hostname, () => {
     console.log(`Server is running at http://${hostname}:${port}`)
 });
 
+const rootController = require('./routes/index'),
+    favoritesController = require('./routes/favorites');
+
+    app.use('/', rootController);
+    app.use('/favorites', favoritesController );
